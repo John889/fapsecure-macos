@@ -1,4 +1,5 @@
 #fapsecure for macOS
+----------------------
 *Contains an app blocker, you could block any apps that you want.
 *Blocks Tor and other unsafe browsers
 *It will enforce Cleanbrowsing family DNS (IPV4) by default on all versions of macOS. (Enforces SafeSearch and blocks porn)
