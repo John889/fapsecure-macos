@@ -1,4 +1,4 @@
-# fapsecure-macos
+#fapsecure for macOS
 *Contains an app blocker, you could block any apps that you want.
 *Blocks Tor and other unsafe browsers
 *It will enforce Cleanbrowsing family DNS (IPV4) by default on all versions of macOS. (Enforces SafeSearch and blocks porn)
@@ -30,6 +30,8 @@ Here is how to get it:
 Open Applications folder, right click the app that you want to block > Show package contents > Contents > MacOS, the binary file is located there, it has a black rectangle icon, Copy its file name exactly as it is and paste it in a new line in blockedapps.txt in the fapsecure folder, you could add as many apps as you want. The blocking is case-senstive which means that if the binary name is Telegram and you added telegram, the app won't be blocked. Also, don't put the binary file name between quotes even if it contains spaces.
 Now run fapsecure, the app will be blocked. If you find another app, just add it to the list and run fapsecure again. You don't need to stop fapsecure to add apps.
 
+Regex is used by default. If you add badapp, then badapp, badapplication and badapp 122345 will also be blocked. You can use the dollar sign ($) to mark the last character. Example: badapp$ will block only badapp
+
 Fapsecure could be used to block access to specific pages of System Preferences by editing blockedapps.txt. This is very useful, if you want to enforce Screen Time settings while keeping your admin rights. Don't forget to also add the following 
 
 Example:
@@ -42,10 +44,10 @@ ScreenTimeViewService
 -To block access to Users & Groups, add:
 com.apple.preferences.users.remoteservice
 
--To block access to Date & Time:
+-To block access to Date & Time (added by default):
 com.apple.preference.datetime.remoteservice
 
-Uninstalling (and what to do, if you forgot the password)
+Uninstalling (and what to do if you forgot the password)
 ------------
 A) If you have fapsecure's password:
 Steps:
