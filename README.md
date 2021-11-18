@@ -52,17 +52,17 @@ Uninstalling (and what to do if you forgot the password)
 A) If you have fapsecure's password:
 Steps:
 
-(Older fapsecure versions, used to install Cleanbrowsing DNS profile which could only be removed using fapsecure's password. You have to remove it. Go to System Preferences > Profiles then remove Cleanbrowsing profile by pressing the minus (-) button. Use fapsecure's password. Newer versions of fapsecure don't install that profile anymore but you could still download and edit that profile as you wish)
+(Older fapsecure versions used to install Cleanbrowsing DNS profile which could only be removed using fapsecure's password. You have to remove it. Go to System Preferences > Profiles then remove Cleanbrowsing profile by pressing the minus (-) button. Use fapsecure's password. Newer versions of fapsecure don't install that profile anymore but you could still download and edit that profile as you wish)
 
 
 Fapsecure folder must be on the desktop
 
-Open "Terminal" from your applications and Enter the following codes:
+Open "Terminal" from your applications and Enter the following code:
 
 chmod +x ~/desktop/Fapsecure/uninstall.sh; ~/desktop/Fapsecure/uninstall.sh
 
 
-You will be asked for your user account's password first. 
+You will be asked for your user account password first. 
 Then you will be asked for Fapsecure's password. Copy it from lockbox.pluckeye.net and paste it using Command+v then press enter.
 
 (You MIGHT NEED to restart your mac and run the uninstaller again to complete the uninstallation using the same command above. The uninstaller will tell you if a restart is required)
