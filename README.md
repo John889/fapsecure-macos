@@ -1,4 +1,4 @@
-#fapsecure for macOS
+fapsecure for macOS
 ----------------------
 *Contains an app blocker, you could block any apps that you want.
 *Blocks Tor and other unsafe browsers
