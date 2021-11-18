@@ -33,8 +33,7 @@ Now run fapsecure, the app will be blocked. If you find another app, just add it
 
 Regex is used by default. If you add badapp, then badapp, badapplication and badapp 122345 will also be blocked. You can use the dollar sign ($) to mark the last character. Example: badapp$ will block only badapp
 
-Fapsecure could be used to block access to specific pages of System Preferences by editing blockedapps.txt. This is very useful, if you want to enforce Screen Time settings while keeping your admin rights. Don't forget to also add the following 
-
+Fapsecure could be used to block access to specific pages of System Preferences by editing blockedapps.txt. This is very useful, if you want to enforce Screen Time settings while keeping your admin rights.
 Example:
 -To block access to Screen Time pane, add:
 com.apple.preference.screentime.remoteservice
