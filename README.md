@@ -1,8 +1,10 @@
 fapsecure for macOS
 ----------------------
-*Contains an app blocker, you could block any apps that you want.
+*Includes an app blocker, you could block any apps that you want.
+*Includes a file/folder protector, which could be used to protect any file/folder/app including the hosts file.
 *Blocks Tor and other unsafe browsers
 *It will enforce Cleanbrowsing family DNS (IPV4) by default on all versions of macOS. (Enforces SafeSearch and blocks porn)
+
 
 A random password will be automatically generated on your desktop. You need to save that. If you lose the password, you'll have to wait for 4 hours to stop fapsecure.
 
@@ -46,6 +48,26 @@ com.apple.preferences.users.remoteservice
 
 -To block access to Date & Time (added by default):
 com.apple.preference.datetime.remoteservice
+
+File/folder Protection
+---------------------
+This could be done by editing protectedfiles.txt in fapsecure folder.
+You could protect as many files/folders/apps as you want from being modified or deleted. If you add a folder, all of its contents will be protected.
+Just add the paths to whatever you want to protect, and separate them using a line break(enter). Example:
+/etc/hosts
+/Applications/Wondershare.app
+/Users/kiddo/Documents/conference.rtf 
+
+Is there an easy way to get the path of a file or a folder?
+Yes, by editing protectedfiles.txt using the nano editor. Enter this in terminal:
+nano ~/Desktop/Fapsecure/protectedfiles.txt 
+
+Now, you could just drag whatever file or folder to the terminal window and the path will be pasted into protectedfiles.txt. Press enter, drag another file if you want, repeat.
+To save protectedfiles.txt, press: control+o, Enter, control+x
+
+After you save protectedfiles.txt, you'll have to run fapsecure. You don't need to stop fapsecure to update the list protected files.
+
+To unprotect the files, uninstall fapsecure.
 
 Uninstalling (and what to do if you forgot the password)
 ------------
