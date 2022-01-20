@@ -6,23 +6,28 @@ fapsecure for macOS
 *It will enforce Cleanbrowsing family DNS (IPV4) by default on all versions of macOS. (Enforces SafeSearch and blocks porn)
 
 
-A random password will be automatically generated on your desktop. You need to save that. If you lose the password, you'll have to wait for 4 hours to stop fapsecure.
+A random password will be automatically generated on your desktop. You need to save that. If you lose the password, you'll have to wait for a delay 4 hours to stop fapsecure. You could customize the delay by editing delay.txt. You have to enter a delay in seconds.
 
 Using a custom DNS (optional)
 ---------------------------
 Fapsecure uses Cleanbrowsing family DNS by default, which is 185.228.168.168
 If you want to use another DNS, then edit mydns.txt file in the fapsecure folder. It will be locked once you run fapsecure. To change it, you will have to stop fapsecure.
 
+There is a bug on macOS when the DNS is locked. If you disconnect from a wifi network, you might not be able to reconnect. You'll have to go to Network Preferences> Wi-Fi> Advanced, then select your wifi network and click the minus button (-) to remove it then connect to it again. 
+
+You could tell fapsecure to not touch the dns settings nor to lock it by putting nodns in the first line in mydns.txt
+
 Installing
 ----------
-Copy fapsecure folder to the Desktop (not optional) then paste the following command in "Terminal":
+Copy fapsecure folder to the Desktop (not optional) then paste the following line in "Terminal":
 
-chmod +x ~/desktop/Fapsecure/Fapsecure.sh; ~/desktop/Fapsecure/Fapsecure.sh
+xattr -d com.apple.quarantine ~/desktop/Fapsecure/Fapsecure.sh; chmod +x ~/desktop/Fapsecure/Fapsecure.sh; ~/desktop/Fapsecure/Fapsecure.sh
 
+(Copy using command + c, and paste using command + v)
 
 The password for uninstalling fapsecure will be generated on your Desktop (fapsecurepw.txt), copy it immediately to lockbox.pluckeye.net
 
-I am not responsible if you lose this password.
+Please, do not lose it.
 
 App Blocker
 -----------
@@ -81,7 +86,7 @@ Fapsecure folder must be on the desktop
 
 Open "Terminal" from your applications and Enter the following code:
 
-chmod +x ~/desktop/Fapsecure/uninstall.sh; ~/desktop/Fapsecure/uninstall.sh
+xattr -d com.apple.quarantine ~/desktop/Fapsecure/uninstall.sh; chmod +x ~/desktop/Fapsecure/uninstall.sh; ~/desktop/Fapsecure/uninstall.sh
 
 
 You will be asked for your user account password first. 
@@ -94,9 +99,9 @@ A) If you don't have fapsecure's password:
 
 Fapsecure folder must be on the desktop
 
-Open "Terminal" from your applications and Enter the following codes:
+Open "Terminal" from your applications and enter the following line:
 
-chmod +x ~/desktop/Fapsecure/uninstalltime.sh; ~/desktop/Fapsecure/uninstalltime.sh
+xattr -d com.apple.quarantine ~/desktop/Fapsecure/uninstalltime.sh; chmod +x ~/desktop/Fapsecure/uninstalltime.sh; ~/desktop/Fapsecure/uninstalltime.sh
 
 You'll have to wait for 4 hours then the uninstaller will remove fapsecure. Do not close the terminal window.
 
