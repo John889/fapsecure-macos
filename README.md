@@ -61,13 +61,15 @@ You could protect as many files/folders/apps as you want from being modified or 
 Just add the paths to whatever you want to protect, and separate them using a line break(enter). Example:
 /etc/hosts
 /Applications/Wondershare.app
-/Users/kiddo/Documents/conference.rtf 
+/Users/kiddo/Documents/confer.rtf 
 
 Is there an easy way to get the path of a file or a folder?
-Yes, by editing protectedfiles.txt using the nano editor. Enter this in terminal:
+Open Terminal and drag a file or folder to terminal and its path will appear in Terminal. Copy the path using ctrl+c and paste it into protectedfiles.txt
+
+Another way to do it is by editing protectedfiles.txt using the nano editor. Enter this in terminal:
 nano ~/Desktop/Fapsecure/protectedfiles.txt 
 
-Now, you could just drag whatever file or folder to the terminal window and the path will be pasted into protectedfiles.txt. Press enter, drag another file if you want, repeat.
+Now, you could just drag whatever file or folder to the terminal window and the path will be pasted into protectedfiles.txt. Press enter to insert a line break, drag another file if you want, repeat.
 To save protectedfiles.txt, press: control+o, Enter, control+x
 
 After you save protectedfiles.txt, you'll have to run fapsecure. You don't need to stop fapsecure to update the list protected files.
